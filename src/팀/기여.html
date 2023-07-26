@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="스텔뮤직 Web">
+    <meta property="og:description" content="스텔뮤직 페이지">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1064184323617599488/1109309124044398632/stelmusic_banner.png"/>
+    <meta name="theme-color" content="#1DDB16">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>STELMUSIC</title>
+    <link rel="stylesheet" href="팀.css">
+</head>
+<body>
+    <body>
+        <div id="header-wrap">
+            <div id="header">
+              <a class="logo" href="/">
+                <img src="https://cdn.discordapp.com/attachments/1111177143666352162/1131830020873125898/stelmusic-yuni.png" style="width:50px; height:50px;"/></a>
+              <div class="nav-bar">
+                <a class="nav-item" id="공지사항" href="/src/공지사항/공지사항.html">
+                  <div class="ellipse_1">
+                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                    </svg>
+                  </div>공지사항
+                </a>
+                <a class="nav-item" id="뉴스" href="/src/뉴스/뉴스.html">
+                  <div class="ellipse_1">
+                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                    </svg>
+                  </div>뉴스
+                </a>
+                <div class="nav-item-container">
+                  <div class="nav-item" id="아티스트">
+                    <div class="ellipse_1">
+                      <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                      </svg>
+                    </div>
+                    아티스트
+                    <div class="sub-menu">
+                      <a href="/src/아티스트/아티스트.html">전체보기</a>
+                      <a></a>
+                      <a href="/src/아티스트/artist1.html">강지</a>
+                      <a></a>
+                      <a href="/src/아티스트/artist2.html">칸나</a>
+                      <a></a>
+                      <a href="/src/아티스트/artist3.html">유니</a>
+                    </div>
+                  </div>
+                </div>
+                <a class="nav-item" id="프로젝트" href="/src/프로젝트/프로젝트.html">
+                  <div class="ellipse_1">
+                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                    </svg>
+                  </div>프로젝트
+                </a>
+                <a class="nav-item" id="팀" href="/src/팀/팀.html">
+                  <div class="ellipse_1">
+                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                    </svg>
+                  </div>팀
+                </a>
+                <div id="right-divider"></div>
+                <div class="bar-right">
+                  <a class="nav-item" id="지원" href="/src/지원/지원.html">
+                    <div class="ellipse_1">
+                      <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                      </svg>
+                    </div>지원
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="burger-btn">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+
+          <div class="hello">
+            <br>
+            <br>
+            <h1>WELCOME PASTEL!
+            </h1>
+            <h2 class="subtitle" style="font-size: 20px;">많은 지원 부탁드립니다 :)</h2>
+            <div id="divider2"></div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1>메일 보내기</h1>
+<div class="ferson-button">
+    <button type="button" class="btnerror" onclick="sendEmail()">기여하기</button>
+</div>
+
+<br>
+<br>
+<style>
+    .text-box2 {
+        background-color: rgb(45, 45, 45);
+        padding: 30px;
+        border-radius: 50px;
+    }
+.text-box {
+        background-color: rgb(53, 53, 53);
+        padding: 50px;
+        border-radius: 50px;
+    }
+</style>
+
+<div class="text-box2">
+<h4>메일에는 꼭!<br></h4>
+
+<div class="text-box">
+안녕하세요! 스텔뮤직 인사 담당 HAVE입니다.<br>
+우선 기여를 하시기 전 파스텔 분께서 무엇을 하시는 분인지 간단하게 소개 부탁드립니다 !<br>
+*해당 메일의 회신까지는 2일에서 5일까지 걸릴 수 있습니다.*<br>
+"""<br>
+닉네임이 무엇인가요 ? :  <br>
+스텔라이브중 어떤 스트리머를 시청하시나요 ? : <br>
+어떠한 부분에서 기여를 하시고 싶으신가요 ? : <br>
+해당 부분에서 일해보신 적 있으실까요 ? : <br>
+해당 프로젝트는 팬 프로젝트인 만큼 보수가 없습니다. 괜찮으신가요 ? :<br>
+( 기여자분들께만 드리지 않는 것이 아니고 해당 사이트로 인한 수익은 비활성화 후 서비스할 예정입니다.  )<br>
+<br>
+감사합니다! 2일~5일 내로 회신하겠습니다.<br>
+"""<br>
+! 혹시 회신이 오지 않는다면 개인 사정이나 많은 분의 기여 요청으로 인해 조금 늦는 것이니 조금만 더 기다려 주시기를 바랍니다 ! <br>
+지원해 주신 모든 분께 감사드립니다.<br>
+<br>
+감사합니다!<br>
+</div>
+
+<h4>를 포함하여 작성해주세요 !</h4>
+</div>
+
+<script>
+function openApplicationPage() {
+    window.open("기여.html");
+}
+</script>
+
+
+
+        <div id="footer-wrap">
+            <footer>
+              <div class="footer">
+                <div class="footer-content">
+                  <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1111177143666352162/1131830020873125898/stelmusic-yuni.png" style="width:50px; height:50px;"/></a>
+                  </div>
+                  <footertext>&copy; 2023 STELMUSIC. All rights reserved.</footertext>
+                </div>
+              </div>
+            </footer>
+          </div>
+    <script src="../a.js"></script>
+    <script src="팀.js"></script>
+</body>
+</html>

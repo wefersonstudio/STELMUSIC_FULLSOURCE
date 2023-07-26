@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="스텔뮤직 Web">
+    <meta property="og:description" content="스텔뮤직 페이지">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1064184323617599488/1109309124044398632/stelmusic_banner.png"/>
+    <meta name="theme-color" content="#1DDB16">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>STELMUSIC</title>
+    <link rel="stylesheet" href="아티스트.css">
+</head>
+<body>
+    <div id="header-wrap">
+        <div id="header">
+          <a class="logo" href="/">
+            <img src="https://cdn.discordapp.com/attachments/1111177143666352162/1131830020873125898/stelmusic-yuni.png" style="width:50px; height:50px;"/></a>
+          <div class="nav-bar">
+            <a class="nav-item" id="공지사항" href="/src/공지사항/공지사항.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>공지사항
+            </a>
+            <a class="nav-item" id="뉴스" href="/src/뉴스/뉴스.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>뉴스
+            </a>
+            <div class="nav-item-container">
+              <div class="nav-item" id="아티스트">
+                <div class="ellipse_1">
+                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                  </svg>
+                </div>
+                아티스트
+                <div class="sub-menu">
+                  <a href="/src/아티스트/아티스트.html">전체보기</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist1.html">강지</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist2.html">칸나</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist3.html">유니</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist4.html">타비</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist5.html">리제</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist6.html">히나</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist7.html">마시로</a>
+                  <a></a>
+                  <a href="/src/아티스트/stellive1st.html">스텔라이브 1기생 단체</a>
+                  <a></a>
+                  <a href="/src/아티스트/stellive2nd.html">스텔라이브 2기생 단체</a>
+                </div>
+              </div>
+            </div>
+            <a class="nav-item" id="프로젝트" href="/src/프로젝트/프로젝트.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>프로젝트
+            </a>
+            <a class="nav-item" id="팀" href="/src/팀/팀.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>팀
+            </a>
+            <div id="right-divider"></div>
+            <div class="bar-right">
+              <a class="nav-item" id="지원" href="/src/지원/지원.html">
+                <div class="ellipse_1">
+                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                  </svg>
+                </div>지원
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="burger-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+
+      <h1 class="icon-text">아이콘을 클릭해 노래를 재생해보세요.</h1><br>
+
+      <div class="section">
+        <div class="artist-icons">
+            <div class="artist-icon" id="artist1" onclick="toggleProfile('artist1')">
+                <!-- 강지 아이콘 -->
+                <img src="https://i.namu.wiki/i/DUc-DQnIQGbPsY2T7OEWNdCEc82ysR-Bd3L7gN6wjOikt9AM0VLVdkeyQXcTS9QysgHwWIRiU-WFmGQmObpwCA.webp" alt="강지 아이콘">
+                <div class="artist-profile" id="artist1-profile" style="display: none;">
+                    <h2>강지 프로필</h2>
+                    <div class="profile-details">
+                        <img src="https://i.namu.wiki/i/DUc-DQnIQGbPsY2T7OEWNdCEc82ysR-Bd3L7gN6wjOikt9AM0VLVdkeyQXcTS9QysgHwWIRiU-WFmGQmObpwCA.webp" alt="강지 프로필 이미지">
+                        <p>강지는 트위치 파트너 스트리머 및 유튜브 크리에이터이자, 버츄얼 유튜버 그룹 스텔라이브의 대표입니다.</p>
+                    </div>
+                    <h3>강지 곡 목록</h3>
+                    <ul>
+                      <li>
+                            <span class="veri2">강지 - Stay As Spring</span>
+                            <button onclick="playSongByTitle('Stay As Spring')">플레이</button>
+                        </li>
+                        <li>
+                          <span>강지 - 수고했어, 오늘도</span>
+                          <button onclick="playSongByTitle('수고했어, 오늘도')">플레이</button>
+                      </li>
+                        <!-- <li>
+                            <span class="veri">GangZi - 내가 죽으려고 생각 한것은</span>
+                            <button onclick="playSongByTitle('내가 죽으려고 생각 한것은')">플레이</button>
+                        </li> -->
+                        <button onclick="showMore('artist1')">더보기</button>
+                    </ul>
+                </div>
+            </div>
+            <div class="artist-icon" id="artist2" onclick="toggleProfile('artist2')">
+                <!-- 칸나 아이콘 -->
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/57ee5d17-c96e-4046-bc00-1eab91bb9466-profile_image-300x300.png" alt="칸나 아이콘">
+                <div class="artist-profile" id="artist2-profile" style="display: none;">
+                    <h2>칸나 프로필</h2>
+                    <div class="profile-details">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/57ee5d17-c96e-4046-bc00-1eab91bb9466-profile_image-300x300.png" alt="칸나 프로필 이미지">
+                        <p>칸나는 2023년 1월 7일 스텔라이브 소속으로 데뷔한 버츄얼 스트리머이며 독특한 음악 스타일로 많은 이목을 끌고 있습니다.</p>
+                    </div>
+                    <h3>칸나 곡 목록</h3>
+                    <ul>
+                         <li>
+                            <span class="veri">AiriKanna - 신시대</span>
+                            <button onclick="playSongByTitle('신시대')">플레이</button>
+                        </li>
+                        <li>
+                            <span class="veri">AiriKanna - Cookie</span>
+                            <button onclick="playSongByTitle('Cookie')">플레이</button>
+                        </li>
+                        <li>
+                            <span class="veri2">AiriKanna - ADDICT!ON</span>
+                            <button onclick="playSongByTitle('addiction')">플레이</button>
+                        </li>
+                        <li>
+                            <span class="veri">AiriKanna - 스텔라 스텔라</span>
+                            <button onclick="playSongByTitle('스텔라 스텔라')">플레이</button>
+                        </li>
+                        <li>
+                            <span class="veri">AiriKanna - 나는 최강</span>
+                            <button onclick="playSongByTitle('나는 최강')">플레이</button>
+                        </li>
+                        <li>
+                            <span class="veri">AiriKanna - 좋아하니까</span>
+                            <button onclick="playSongByTitle('좋아하니까')">플레이</button>
+                        </li>
+                        <li>
+                            <span class="veri">AiriKanna - error</span>
+                            <button onclick="playSongByTitle('error')">플레이</button>
+                        </li>
+                        <li>
+                            <span class="veri">AiriKanna - 삼문소설</span>
+                            <button onclick="playSongByTitle('삼문소설')">플레이</button>
+                        </li>
+                        <li>
+                            <span class="veri">AiriKanna - suzume</span>
+                            <button onclick="playSongByTitle('suzume')">플레이</button>
+                        </li>
+                        <li>
+                          <span class="veri">AiriKanna - 아이돌</span>
+                          <button onclick="playSongByTitle('아이돌')">플레이</button>
+                      </li>
+                        <button onclick="showMore('artist2')">더보기</button>
+                      </ul>
+                </div>
+            </div>
+            <div class="artist-icon" id="artist3" onclick="toggleProfile('artist3')">
+                <!-- 유니 아이콘 -->
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/bcd45a9c-d209-42d3-aa59-c546b6155891-profile_image-70x70.png" alt="유니 아이콘">
+                <div class="artist-profile" id="artist3-profile" style="display: none;">
+                    <h2>유니 프로필</h2>
+                    <div class="profile-details">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/bcd45a9c-d209-42d3-aa59-c546b6155891-profile_image-70x70.png" alt="유니 프로필 이미지">
+                        <p>유니는 2023년 1월 8일 스텔라이브 소속으로 데뷔한 버츄얼 스트리머이며 귀여운 음악 스타일로 많은 이목을 끌고 있습니다.</p>
+                    </div>
+                    <h3>유니 곡 목록</h3>
+                    <ul>
+                          <li>
+                              <span class="veri2">AyatsunoYuni - 내꺼하는법</span>
+                              <button onclick="playSongByTitle('내꺼하는법')">플레이</button>
+                          </li>
+                          <li>
+                              <span class="veri">AyatsunoYuni - 사랑의 말 Ⅳ</span>
+                              <button onclick="playSongByTitle('사랑의 말 Ⅳ')">플레이</button>
+                          </li>
+                          <li>
+                              <span class="veri">AyatsunoYuni - 베텔기우스</span>
+                              <button onclick="playSongByTitle('베텔기우스1')">플레이</button>
+                          </li>
+                          <li>
+                              <span class="veri">AyatsunoYuni - 긍지높은 아이돌</span>
+                              <button onclick="playSongByTitle('긍지높은 아이돌')">플레이</button>
+                          </li>
+                          <li>
+                            <span class="veri">AyatsunoYuni - 굿바이 선언</span>
+                            <button onclick="playSongByTitle('굿바이 선언')">플레이</button>
+                          </li>
+                        <button onclick="showMore('artist3')">더보기</button>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="artist-icon" id="artist4" onclick="toggleProfile('artist4')">
+              <!-- 타비 아이콘 -->
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/c19e482a-ea0c-45a1-bb2e-8696666815a2-profile_image-70x70.png" alt="타비 아이콘">
+              <div class="artist-profile" id="artist4-profile" style="display: none;">
+                  <h2>타비 프로필</h2>
+                  <div class="profile-details">
+                      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/c19e482a-ea0c-45a1-bb2e-8696666815a2-profile_image-70x70.png" alt="타비 프로필 이미지">
+                      <p>타비는 2023년 6월 11일 스텔라이브 소속 2기생으로 데뷔한 버츄얼 스트리머입니다.</p>
+                  </div><br>
+                  <h3>타비 곡 목록</h3>
+                  <ul>
+                    <li>
+                      <span class="veri">Arahashi Tabi - 그 여름의 어느 날은</span>
+                      <button onclick="playSongByTitle('그 여름의 어느 날은')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 시룬대할꼰대</span>
+                      <button onclick="playSongByTitle('시룬대할꼰대')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 타이타닉</span>
+                      <button onclick="playSongByTitle('타이타닉')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 벼랑 위의 포뇨</span>
+                      <button onclick="playSongByTitle('벼랑 위의 포뇨')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 제주도의 푸른 밤</span>
+                      <button onclick="playSongByTitle('제주도의 푸른 밤')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 키라키라</span>
+                      <button onclick="playSongByTitle('키라키라')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 티모송</span>
+                      <button onclick="playSongByTitle('티모송')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 첫사랑</span>
+                      <button onclick="playSongByTitle('첫사랑')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 강풍올백</span>
+                      <button onclick="playSongByTitle('강풍올백')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 개화</span>
+                      <button onclick="playSongByTitle('개화')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 아니 근데 진짜</span>
+                      <button onclick="playSongByTitle('아니 근데 진짜')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 첫사랑2</span>
+                      <button onclick="playSongByTitle('첫사랑1')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 힘내</span>
+                      <button onclick="playSongByTitle('힘내')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 상사화</span>
+                      <button onclick="playSongByTitle('상사화')">플레이</button>
+                    </li>
+                    <li>
+                      <span>Arahashi Tabi - 있잖아</span>
+                      <button onclick="playSongByTitle('있잖아')">플레이</button>
+                    </li>
+                  <button onclick="showMore('artist4')">더보기</button>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="artist-icon" id="artist5" onclick="toggleProfile('artist5')">
+            <!-- 리제 아이콘 -->
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/c348bbf1-0325-4092-81dc-dcfc01a189c9-profile_image-300x300.png" alt="리제 아이콘">
+            <div class="artist-profile" id="artist5-profile" style="display: none;">
+                <h2>리제 프로필</h2>
+                <div class="profile-details">
+                    <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/c348bbf1-0325-4092-81dc-dcfc01a189c9-profile_image-300x300.png" alt="리제 프로필 이미지">
+                    <p>리제는 2023년 6월 11일 스텔라이브 소속 2기생으로 데뷔한 버츄얼 스트리머입니다.</p>
+                </div><br>
+                <h3>리제 곡 목록</h3>
+                <ul>
+                  <li>
+                    <span class="veri">Akane Lize - 괴물</span>
+                    <button onclick="playSongByTitle('괴물')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - 나이트댄서</span>
+                  <button onclick="playSongByTitle('나이트댄서')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - 가면무도회</span>
+                  <button onclick="playSongByTitle('가면무도회')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - 비바라비다</span>
+                  <button onclick="playSongByTitle('비바라비다')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - 취한 줄을 모르고</span>
+                  <button onclick="playSongByTitle('취한 줄을 모르고')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - A Sky Full Of Stars</span>
+                  <button onclick="playSongByTitle('A Sky Full Of Stars')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - ai no hana</span>
+                  <button onclick="playSongByTitle('ai no hana')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - Rose</span>
+                  <button onclick="playSongByTitle('Rose1')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - Usseewa</span>
+                  <button onclick="playSongByTitle('Usseewa')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - Can I love ?</span>
+                  <button onclick="playSongByTitle('Can I love ?')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - Dont know what to do</span>
+                  <button onclick="playSongByTitle('Dont know what to do')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - 마루노우치 새디스틱</span>
+                  <button onclick="playSongByTitle('마루노우치 새디스틱')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - 빌런</span>
+                  <button onclick="playSongByTitle('빌런')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - 일과 이분의 일</span>
+                  <button onclick="playSongByTitle('일과 이분의 일')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - 베텔기우스</span>
+                  <button onclick="playSongByTitle('베텔기우스4')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - 마리골드</span>
+                  <button onclick="playSongByTitle('마리골드1')">플레이</button>
+                </li>
+                <li>
+                  <span>Akane Lize - 아라리</span>
+                  <button onclick="playSongByTitle('아라리')">플레이</button>
+                </li>
+                <button onclick="showMore('artist5')">더보기</button>
+                </ul>
+            </div>
+        </div>
+
+        <div class="artist-icon" id="artist6" onclick="toggleProfile('artist6')">
+          <!-- 히나 아이콘 -->
+          <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/5669c13a-51a5-41c4-b189-a29b966146b8-profile_image-70x70.png" alt="히나 아이콘">
+          <div class="artist-profile" id="artist6-profile" style="display: none;">
+              <h2>히나 프로필</h2>
+              <div class="profile-details">
+                  <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/5669c13a-51a5-41c4-b189-a29b966146b8-profile_image-70x70.png" alt="히나 프로필 이미지">
+                  <p>히나는 2023년 6월 10일 스텔라이브 소속 2기생으로 데뷔한 버츄얼 스트리머입니다.</p>
+              </div><br>
+              <h3>히나 곡 목록</h3>
+              <ul>
+                <li>
+                  <span class="veri">Shirayuki Hina - 낙향</span>
+                  <button onclick="playSongByTitle('낙향')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - I Love You 3000</span>
+                <button onclick="playSongByTitle('I Love You 3000')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - 피날레</span>
+                <button onclick="playSongByTitle('피날레')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - 꽃의 망령</span>
+                <button onclick="playSongByTitle('꽃의 망령')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - 드라마</span>
+                <button onclick="playSongByTitle('드라마')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - 미츠하 테마</span>
+                <button onclick="playSongByTitle('미츠하 테마')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - 좌우맹 피아노</span>
+                <button onclick="playSongByTitle('좌우맹 피아노')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - 꽃의 망령 피아노</span>
+                <button onclick="playSongByTitle('꽃의 망령 피아노')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - 귀여워서미안해 피아노</span>
+                <button onclick="playSongByTitle('귀여워서미안해 피아노')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - gyutto</span>
+                <button onclick="playSongByTitle('gyutto')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - Strawberry Moon</span>
+                <button onclick="playSongByTitle('Strawberry Moon')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - 담배</span>
+                <button onclick="playSongByTitle('담배1')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina - 라푼젤</span>
+                <button onclick="playSongByTitle('라푼젤')">플레이</button>
+              </li>
+              <li>
+                <span>Shirayuki Hina & Neneko Mashiro - 외국인의 고백</span>
+                <button onclick="playSongByTitle('외국인의 고백')">플레이</button>
+              </li>
+            <button onclick="showMore('artist6')">더보기</button>
+              </ul>
+          </div>
+      </div>
+
+      <div class="artist-icon" id="artist7" onclick="toggleProfile('artist7')">
+        <!-- 마시로 아이콘 -->
+        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/99764348-b00e-4b89-89c3-2c53fb24fed8-profile_image-70x70.png" alt="마시로 아이콘">
+        <div class="artist-profile" id="artist7-profile" style="display: none;">
+            <h2>마시로 프로필</h2>
+            <div class="profile-details">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/99764348-b00e-4b89-89c3-2c53fb24fed8-profile_image-70x70.png" alt="마시로 프로필 이미지">
+                <p>마시로는 2023년 6월 10일 스텔라이브 소속 2기생으로 데뷔한 버츄얼 스트리머입니다.</p>
+            </div><br>
+            <h3>마시로 곡 목록</h3>
+            <ul>
+              <li>
+                <span class="veri">Neneko Mashiro - 퀘스천 ( Question )</span>
+                <button onclick="playSongByTitle('퀘스천 ( Question )')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 미안하다송 [ 시로ver ]</span>
+              <button onclick="playSongByTitle('미안하다송 [ 시로Ver ]')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 바나나차차</span>
+              <button onclick="playSongByTitle('바나나차차')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 방가방가 햄토리 오프닝</span>
+              <button onclick="playSongByTitle('방가방가 햄토리 오프닝')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 무희</span>
+              <button onclick="playSongByTitle('무희1')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 스파이더맨 기타</span>
+              <button onclick="playSongByTitle('스파이더맨 기타')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 最&高</span>
+              <button onclick="playSongByTitle('最&高 [ 시로 ver ]')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro & Shirayuki Hina - 외국인의 고백</span>
+              <button onclick="playSongByTitle('외국인의 고백')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 괴물</span>
+              <button onclick="playSongByTitle('괴물1')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 오 잠깐</span>
+              <button onclick="playSongByTitle('오 잠깐')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 욕심의 반대편으로</span>
+              <button onclick="playSongByTitle('욕심의 반대편으로')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 기다리다</span>
+              <button onclick="playSongByTitle('기다리다')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 미안하다송2</span>
+              <button onclick="playSongByTitle('미안하다송2')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 비의 주문 (한국어 ver.)</span>
+              <button onclick="playSongByTitle('비의 주문 (한국어 ver.)')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 스토커</span>
+              <button onclick="playSongByTitle('스토커')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 잠이 안와</span>
+              <button onclick="playSongByTitle('잠이 안와')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 찢어진 바지</span>
+              <button onclick="playSongByTitle('찢어진 바지')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - Ahoy!! 우리는 호쇼해적단</span>
+              <button onclick="playSongByTitle('Ahoy 우리는 호쇼해적단2')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 반말송</span>
+              <button onclick="playSongByTitle('반말송')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 아리에게</span>
+              <button onclick="playSongByTitle('아리에게')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 폰서트</span>
+              <button onclick="playSongByTitle('폰서트')">플레이</button>
+            </li>
+            <li>
+              <span>Neneko Mashiro - 처음 사랑하는 연인들을 위해</span>
+              <button onclick="playSongByTitle('처음 사랑하는 연인들을 위해')">플레이</button>
+            </li>
+            <button onclick="showMore('artist7')">더보기</button>
+              </ul>
+        </div>
+    </div>
+
+
+  <div class="artist-icon" id="stellive1st" onclick="toggleProfile('stellive1st')">
+    <!-- 마시로 아이콘 -->
+    <img src="data:image/jpeg;base64,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" alt="스텔라이브 아이콘">
+    <div class="artist-profile" id="stellive1st-profile" style="display: none;">
+      <h2>스텔라이브 1기 Mystic</h2>
+      <div class="profile-details">
+          <img src="data:image/jpeg;base64,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" alt="스텔라이브 프로필 이미지">
+          <p>스텔라이브 1기 Mystic</p>
+        </div><br>
+        <h3>스텔라이브 1기 Mystic 곡 목록</h3>
+        <ul>
+          <li>
+            <span>1기생 단체(Mystic) - Ahoy 우리는 호쇼해적단</span>
+            <button onclick="playSongByTitle('Ahoy 우리는 호쇼해적단1')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 괴수의 꽃노래</span>
+            <button onclick="playSongByTitle('괴수의 꽃노래3')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 디토</span>
+            <button onclick="playSongByTitle('디토1')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 베텔기우스</span>
+            <button onclick="playSongByTitle('베텔기우스3')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 사쿠란보</span>
+            <button onclick="playSongByTitle('사쿠란보1')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 스노우 하레이션</span>
+            <button onclick="playSongByTitle('스노우 하레이션')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 좋아하니까.</span>
+            <button onclick="playSongByTitle('좋아하니까.')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 신시대</span>
+            <button onclick="playSongByTitle('신시대1')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 아이돌</span>
+            <button onclick="playSongByTitle('아이돌3')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 에잇</span>
+            <button onclick="playSongByTitle('에잇2')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 카타오모이</span>
+            <button onclick="playSongByTitle('카타오모이')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 텔미</span>
+            <button onclick="playSongByTitle('텔미')">플레이</button>
+          </li>
+          <li>
+            <span>1기생 단체(Mystic) - 팬서비스</span>
+            <button onclick="playSongByTitle('팬서비스2')">플레이</button>
+          </li>
+        <button onclick="showMore('stellive1st')">더보기</button>
+          </ul>
+    </div>
+</div>
+
+<div class="artist-icon" id="stellive2nd" onclick="toggleProfile('stellive2nd')">
+  <!-- 마시로 아이콘 -->
+  <img src="data:image/jpeg;base64,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" alt="스텔라이브 아이콘">
+  <div class="artist-profile" id="stellive2nd-profile" style="display: none;">
+    <h2>스텔라이브 2기 Universe</h2>
+    <div class="profile-details">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxESEhAREhISFRUREBMVFRUTFQ8VEhcSFRUWFxUVFRUYHSggGBolGxYVITEhJSktLi4uGh8zODUsNzQvLisBCgoKDg0OGhAQGy0lICYtLSsuLi0tLS0tKysrLS0vLS8tLS0tLS4tLS0tLS0tLS0tLy0rLS0tKy0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAgYBAwUEB//EADsQAAIBAgIGBgcHBQEBAAAAAAABAgMRBBIFBiExQWEiUXGBkbETMkKhwcLRI1JicpLh8CRDgqKyMxT/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAgMEBQH/xAAmEQACAgEEAgICAwEAAAAAAAAAAQIRAwQSITEiQVGxMnETI2FC/9oADAMBAAIRAxEAPwD7iAAAAAAAAAAQq1YxTlJqKW9tpJdrYBMFX0nrnSheNGLqP7zvGH1f82lWx+sOJrXzVHFP2afQj2bNr72zXj0eSXL4PLR9Gxmk6FL/ANKsIvqbWb9O84+I1zwsfV9JP8sbL/Zo+eGTXHQQXbbPNxc6uva9mg3+aaXuUWeeWvVXhRh3ykyqAtWkwr19nllrWvNXjRp/qkjdT17+9h++NT4OPxKcA9Jhfr7Fn0DD664aXrKpDm4pr/Vt+46+D0xh6tslWDb4XtL9L2nygxYqlocb6bQ3H2YHyrAabxFG2SrKy9mXSj2We7usWjRmusHZV4ZH9+F3HvjvXdcyZNFkj1yS3ItoNWGxEKkVOEoyi+MWmjaZGqPQAAAAAAAAAAAAAAAAAADEpJJtuySu29yRSdYtanK9LDtqO51FslLlDqXPf2cbcWGWR1E8bo7OnNZqVC8I/aVF7KfRi/xP4Lb2FG0npStiHerJvbsitkF2R+O88gOvh08MfXfyVuVkQSBeeWRBIAWRBIAWRBIAWRBIAWRBIAWb8DjqlGWalNxfG258pLcy7aD1sp1bQrWpz3J/25Pk36r5PxKELFOXBDIue/k9UqPsQPn+r2s86NqdW8qe5PfKHZ1x5eHUX2jVjOKlFqUZK6a2po5GbBLE6ZYnZMAFJ6AAAAAAAAADEpJJtuySu29yRkpOuGnMzeHpvop2qNe1JewuS48/fbhxPJKkeN0ebWfWF126VNtUk9r4zfW/w9S/irtiQO3jhGEdsSluyNhYkCYsjYWJACyNhYkALI2FiQAsjYWJACyNhYkALI2FiQAsjYWJACyNjs6u6dlhpWd5UpPpR4p/ejz5cTkAjOCmqkEz65QrRnGM4tOMldNbmiZ8/wBVdOegl6Ob+ym+PsSfHsfHx67/AEA4mfC8UqLouwACk9AAAABCrUUYylJ2UU231JbWwDja1aX9BTywf2lS6XXGPGXwX7Hz09ulcc69WdR8X0V1RXqr+cWzyWO3p8Sxwr37M8pWyIJWFi88IglYWAsiCVhYAiCVhYAiCVhYAiCVhYAiCVhYAiCVhYAidXQOhZ4mXGNOL6Uvlj1y8vPOgtCyxEuMacX0pfLHrfl5/Q8Lh4U4xhBKMYqyS/m1mPU6nZ4x7+icI3yykaz6veh+1pJ+j2KS2twe693wfmV0+uVIKScZJNNNNPc096Z840/op4eq4q+SW2D5cYvmvoeaTUb/ABl2Jxrk5Vi8am6Xzx9BN9Kmug3xh1dq8rFJsbsJiJUpwqQ9aDuvinya2d5oz4lkhRGMqZ9WBowWKjVpwqR3Tjfs60+ad0bzhtU6ZoAAPACt67Y7LTjRW+o7y/JH6u3gyyHzjWLF+lxFSXCLyR7I7Pe7vvNWkx7sl/BDI6RzLCxkHYM5iwsZABiwsZABiwsZABiwsZABiwsZABiwsZABiwsZABix09BaFliJcVTi+lL5Y9b8vOWgtDSxEuMacX0pfLHn5ef0DDYeNOMYQSUYqyS/m1mPU6nZ4x7+iyEL5Yw2HhTjGEEoxirJL+bzaAcluy8HO07o1V6Uoe0ulB9Ulu7nu7zoglGTi7Qas+Syi1dNWadmnvuLHf1wwHo62dLo1Vf/ADXrfB97OCd3HNTipIytU6LXqPj/AF6Df44fMvJ+Jbj5do/FOlVp1F7Ek32bpLvTaPqEXdJrczma3HtnuXsuxu1RkAGMsPLpPE+jpVanGMG1+a2z32PmNi965VsuHy/fqRXcry+VFGOpoY1Bv5M+V80RsLEgbSqyNhYkALI2FiQAsjYWJACyNhYkALI2FiQAsjYWJACyNjqaD0NLES4qnF9KXyx5+XnnQeh5YiXFU4vpS+WPPy879hqEacYwgkoxVkkZNTqdnjHv6LYQvljDYeNOMYQSUYqyS/m82gHJbs0AAAAAAHH1rwnpMPN8abU12L1v9W/A+f2Pq1SCknF7pJp9j2M+W1aTjKUXvjJxfanZnT0M7i4lGVc2a7H0TVnE58NSb3xWR/47F7rHz0t2o1bo1odUoy/UrP8A5RPWRvHfwRxPyLQADkmkquvM/wDwjzm/DKl5sqpZddn9pSX4H73+xW7HZ0qrEjJkfkzAM2FjQVmAZsLAGAZsACccPJwlNLowcU3zle3l70ay76L0R/SOlLZKtFyd+EnbL4WiUupTcW4tWcW011NbGinFmU3JL0TlHakQBmwsXEDAM2FgDB09B6HliJcVTi+lL5Y8/LzzoTQ8sRLiqcX0pfLHn5ed8w9CMIqEElGKskjHqdTs8Y9/Rbjx7uWMPQjTioQSUYqySNgBym7NQAAAAAAAAAPnesFLLiay/Hf9SUvifRCia1x/qZ84wf8Arb4GzQvza/wpzficYsGpU7Vpx66TfhKP1ZwLHa1Rf9QucJLyfwN+oV45fopg/JF5ABxDYVHXVfaUn+B+ZXC067Q/8JfnX/LXxKudnSv+pGLL+bMGCQLyuyIJACyJ2NW9F+mqZpL7Om7vqcuEfi+XaadE6KnXls2RT6U+C5LrZesJho04RhBWUf42+Zk1OoUFtj39F2LHfL6NxU9bdF2fp4LY7KaXB7lL4eBbDE4ppppNNWae5p70znYsjxy3I0zjuVHy4ydvTug5UW5wu6b73Dk+XPx58U7MJxmriYpJxdMwdPQmh5V5cVTi+lL5Y8/IzoTREq8ru6pxfSl8sefkXmhRjCKhFJRirJIz6nU7PGPf0WYse7l9DD0IwioQSUYqySNgBym7NYAAAAAAAAAAAAKLrW/6mXKMPK/xL0UDWGebEVn+JL9MUvgbNEv7H+inO/E5p2NUl/ULlCRyDvamw+2m+qk/Fyj9Gb87rHL9GfH+SLkADiG44et9G9FS+5UT7mmvNop2U+h6UoekpVIcXF27VtXvSKBY6ejn4V8GTOvKzXlGU2ZRlNdlNEsNg6lR2hCUuxbF2vcjv6O1W3SrP/CPxl9PE5uB0tWpWUZXivZltXdxXcWHR+sNOdoz6Eue2D7+HeZc8sy/Hr/Oy7GoezrUqUYpRikktyWxImAcs1gAABo4eM1ZpTkpRbgr9KKtZr8P3X7uR3DDe7mThklB3FkZRUuyFCjGEVCKSjFWSRsAIEgAAAAAAAAAAAAAADEnZNvgfNq83OUp/ek5eLuXnWDEZKE+uSyL/Lf7rlHynR0UaTkZs75SNeUtGplHZWn1uMV3Xb80VvKXbVyhkoQ653k+/d7kizVzrHXyQwryOmADlGwFG0rhfR1Zx4Xuvyvavp3F5OHrPhLqNVez0Zdj3e/zNOlntnXyVZY2ir5RlNuUZTpWZqNWUZTblGUWKOjofS8qVoTu6fvj2cuRbKc1JJp3TV01usULKdnV/HuEvRSfRk+jyk+HY/Mx6jCmt0ey7HOuGWYAGA0Ar+m9INVIKP8AalmfOXV4X8T06S0uopxpu8vvcF2dbK80a8GH/qRTkn6RdKFVTjGUd0ldGwq2i9IOk7PbB71xT60WWhXjNXi01/N64FOXE4P/AAnGakbAAVEwAAAAAAAAAAefH4pUoSm+G5dcuCPUm3SDdFe1oxOaaprdTW38z+it4s4mU3zbbbe1ttt83vI5Tr447IqJik7dmMPh3OUYLfKSXjxL9CCSSW5JJdiK7qzhLylUe6Oxfme/3eZZDDq53KvgvwxpWAAZS4EK1JSi4vdJNPvJgApWJw7hKUHvi/FcGaspZtOYLPHOl0orbzj+31K9lOniyb42ZZRpmrKMptyjKWWRo1ZT3aL0a6ru7qKe18exczZo3Rzqu72RW99fJFmp01FKMVZLckZ82fbwuyyGO+WSPNjMHGorNyXY3bvW5npBhTado0NWVfHaNlT2749a+K4HkylylFNNNXT3orePwfo52W57Y/Q2Ys27h9lE4V0eSlQcmoxV2zt4HQ6haUpPN+FuK8VtZ6tHYNU4/ie9/A9ZVlzt8R6JxglywADOWAAAAAAAAAAqumcb6WVl6kd3N8ZHv01pC96cH+Zr/lfE4uU26fFXkyjJK+EaspKFNtpJXbdl2snlO1oHA/3ZLlH4v4eJfkybI2QjG3R1MFhlThGC4La+t8WbwDmN27ZqQAB4AAAAV/SuAyPNH1ZPwfV2FgIzgmmmrp7yzHNwdkZRtFRyjKe/H4F03s2xe5/Bnlym5STVooao9ujNIZLQl6vB8V9Ud2Mk1dbU+oquU9ODxcqe7auMXu7uooy4t3KLIyrhliB58Ni4T3Pb1Pf+56DK01wy0GqtQUnBv2ZXX87beBtAToAAHgAAAAAAABqxGJjBXk+7i+xHqV9A2nG0lpO94U32yXkvqacbjpVNi2R6uL7WePKaceGuZFUp+kasoym3Kb8JhHUdlu4vq/c0uVK2V0Y0dgfSS2+qt7+CLJFW2LciFGkoJRitiNhgyZHNl8Y0gACskAAAAAAAAARnBNNNXTOPjcA4bVtj712naBOE3E8asrOUZTsYnR6e2Ox9XD9jnTpNOzVmao5FLoqcaNCR7aGkJx2PpLnv8Tz5RlPWk+wuDr0sfCXG3b9dx6U09xX8pmN1ubXZsKXhXompFgBxY4qovaffZ+ZNY6p1rwRH+Fnu5HXByHjqnWvBEJYqo/afdZeR5/DIbkdls89XG048b8ltOTNt7232tsjlJrCvZ45Hqr6Sk9kVl572eGV3tbbfM2ZRlLopR6IPk1ZRlN0YN7Ernvw2juM/D6iU1HsKNnjwmCc31R4v6Hao0lFJRVkSSsZMs8jkWKNAAFZIAAAAAAAAAAAAAAAEalNSVmrkgAeCro/7r7n9TyTotb00doMtWVrsi4o4eUZTrTw0Hw8NhqlgVwfiTWVHm052UZT2vAvrXvI//HLl4kt6PKPJlGU9f/xy5eJJYKXWveN6+RR4soynQjget+CNsMJBcL9p48qPdpy4U29ybPVS0e/aduS3nQSsZK3lb6PdprpUYx3L6mwAquyQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//Z" alt="스텔라이브 프로필 이미지">
+        <p>스텔라이브 2기 Universe</p>
+      </div><br>
+      <h3>스텔라이브 2기 Universe 곡 목록</h3>
+      <ul>
+        <li>
+          <span>2기생 단체(Universe) - 따뜻하니까</span>
+          <button onclick="playSongByTitle('따뜻하니까')">플레이</button>
+        </li>
+        <li>
+          <span>2기생 단체(Universe) - 소리가 나는 쪽으로</span>
+          <button onclick="playSongByTitle('소리가 나는 쪽으로')">플레이</button>
+        </li>
+      <button onclick="showMore('stellive2nd')">더보기</button>
+        </ul>
+  </div>
+</div>
+
+
+        </div>
+        </div>
+    </div>
+
+
+        <div id="popup-box">
+        <div id="popup-content">
+            <h2>스텔뮤직 음량관련 이슈 안내</h2>
+            <p>해당 채널에선 음원 파일들의 사운드 음량이 일정하지 않아 꼭 소리를 작게 틀고 난 후 음량을 조절하여 들으시는걸 추천드립니다.<br><br>
+            현재 자동으로 음량을 조절할 수 있는 방안을 찾고있으며<br><br>
+            최대한 빠른시일내 패치할 수 있도록 하겠습니다.<br><br>
+            감사합니다.</p>
+            <label><input type="checkbox" id="dont-show-checkbox">하루동안 열지 않기</label>
+            <button id="close-button">닫기</button>
+        </div>
+    </div>
+
+    <div id="now-playing">
+        <div id="now-playing-info">
+            <img id="now-playing-image" src="" alt="현재 재생 중인 곡 이미지">
+            <div id="now-playing-details">
+                <h2 id="now-playing-title">곡 제목</h2>
+                <p id="now-playing-artist">아티스트</p>
+                <div id="now-playing-progress">
+                    <div id="progress-bar"></div>
+                    <div id="progress-handle"></div>
+                </div>
+                <button id="scrollToTopBtn" onclick="scrollToTop()">TOP</button>
+                <p id="now-playing-time">00:00 / 00:00</p>
+            </div>
+            <button id="shuffle" onclick="shuffle()">전체셔플</button>
+        </div>
+        <div id="player-controls">
+            <button id="prev-button" onclick="playPrevious()">이전</button>
+            <button id="rewind-button">< 5</button>
+            <button id="play-button" onclick="playPause()">〓</button>
+            <button id="forward-button">5 ></button>
+            <button id="next-button" onclick="playNext()">다음</button>
+            <p id="repeat-message"></p><br>
+            <button id="repeat-button">반복 재생</button>
+            <input type="range" id="volume-slider" min="0" max="100" value="100">
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@discordjs/rpc@1.0.7/dist/rpc.min.js"></script> -->
+
+
+
+    <script>
+        var activeProfile = null;
+
+        function toggleProfile(profileId) {
+            var profile = document.getElementById(profileId + "-profile");
+            if (profile.style.display === "none") {
+                hideActiveProfile();
+                profile.style.display = "block";
+                activeProfile = profile;
+            } else {
+                profile.style.display = "none";
+                activeProfile = null;
+            }
+        }
+
+        function hideActiveProfile() {
+            if (activeProfile) {
+                activeProfile.style.display = "none";
+            }
+        }
+    </script>
+    
+    <audio id="audio-player"></audio>
+    <script src="../a.js"></script>
+<link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+<script src="아티스트.js"></script>
+</body>
+</html>

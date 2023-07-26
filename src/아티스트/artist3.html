@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="스텔뮤직 Web">
+    <meta property="og:description" content="스텔뮤직 페이지">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1064184323617599488/1109309124044398632/stelmusic_banner.png"/>
+    <meta name="theme-color" content="#1DDB16">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>유니유니</title>
+    <link rel="stylesheet" href="아티스트2.css">
+</head>
+<body>
+    <div id="header-wrap">
+        <div id="header">
+          <a class="logo" href="/">
+            <img src="https://cdn.discordapp.com/attachments/1111177143666352162/1131830020873125898/stelmusic-yuni.png" style="width:50px; height:50px;"/></a>
+          <div class="nav-bar">
+            <a class="nav-item" id="공지사항" href="/src/공지사항/공지사항.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>공지사항
+            </a>
+            <a class="nav-item" id="뉴스" href="/src/뉴스/뉴스.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>뉴스
+            </a>
+            <div class="nav-item-container">
+              <div class="nav-item" id="아티스트">
+                <div class="ellipse_1">
+                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                  </svg>
+                </div>
+                아티스트
+                <div class="sub-menu">
+                  <a href="/src/아티스트/아티스트.html">전체보기</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist1.html">강지</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist2.html">칸나</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist3.html">유니</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist4.html">타비</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist5.html">리제</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist6.html">히나</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist7.html">마시로</a>
+                  <a></a>
+                  <a href="/src/아티스트/stellive1st.html">스텔라이브 1기생 단체</a>
+                  <a></a>
+                  <a href="/src/아티스트/stellive2nd.html">스텔라이브 2기생 단체</a>
+                </div>
+              </div>
+            </div>
+            <a class="nav-item" id="프로젝트" href="/src/프로젝트/프로젝트.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>프로젝트
+            </a>
+            <a class="nav-item" id="팀" href="/src/팀/팀.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>팀
+            </a>
+            <div id="right-divider"></div>
+            <div class="bar-right">
+              <a class="nav-item" id="지원" href="/src/지원/지원.html">
+                <div class="ellipse_1">
+                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                  </svg>
+                </div>지원
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="burger-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+
+
+      <div class="section">
+        <div class="artist-icons">
+                <!-- 칸나 아이콘 -->
+                <div class="artist-icon" id="artist3">
+                  <!-- 유니 아이콘 -->
+                  <div class="artist-profile" id="artist3-profile" style="display: block;">
+                      <h2>유니 프로필</h2>
+                      <div class="profile-details">
+                          <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/bcd45a9c-d209-42d3-aa59-c546b6155891-profile_image-70x70.png" alt="유니 프로필 이미지">
+                          <p>유니는 2023년 1월 8일 스텔라이브 소속으로 데뷔한 버츄얼 스트리머이며 귀여운 음악 스타일로 많은 이목을 끌고 있습니다.</p>
+                      </div>
+                      <h3>유니 곡 목록</h3>
+                      <ul>
+                          <li>
+                              <span class="veri2">AyatsunoYuni - 내꺼하는법</span>
+                              <button onclick="playSongByTitle('내꺼하는법')">플레이</button>
+                          </li>
+                          <li>
+                              <span class="veri">AyatsunoYuni - 사랑의 말 Ⅳ</span>
+                              <button onclick="playSongByTitle('사랑의 말 Ⅳ')">플레이</button>
+                          </li>
+                          <li>
+                              <span class="veri">AyatsunoYuni - 베텔기우스</span>
+                              <button onclick="playSongByTitle('베텔기우스1')">플레이</button>
+                          </li>
+                          <li>
+                              <span class="veri">AyatsunoYuni - 긍지높은 아이돌</span>
+                              <button onclick="playSongByTitle('긍지높은 아이돌')">플레이</button>
+                          </li>
+                          <li>
+                            <span class="veri">AyatsunoYuni - 굿바이 선언</span>
+                            <button onclick="playSongByTitle('굿바이 선언')">플레이</button>
+                          </li>
+                          <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+                          <li>
+                            <span>AyatsunoYuni - Ahoy 우리는 호쇼해적단</span>
+                            <button onclick="playSongByTitle('Ahoy 우리는 호쇼해적단')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 창성의 아쿠에리온</span>
+                            <button onclick="playSongByTitle('창성의 아쿠에리온')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 체리 유이</span>
+                            <button onclick="playSongByTitle('체리 유이')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 커넥트 마마마</span>
+                            <button onclick="playSongByTitle('커넥트 마마마')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - Im Your Treasure Box</span>
+                            <button onclick="playSongByTitle('Im Your Treasure Box')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 테일러 스위프트</span>
+                            <button onclick="playSongByTitle('테일러 스위프트')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 괴수의 꽃노래</span>
+                            <button onclick="playSongByTitle('괴수의 꽃노래')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 귀요미송</span>
+                            <button onclick="playSongByTitle('귀요미송')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 귯토꼬옥 모사오</span>
+                            <button onclick="playSongByTitle('귯토꼬옥 모사오')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 나는최강 원피스 극장판</span>
+                            <button onclick="playSongByTitle('나는최강 원피스 극장판')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 나토리</span>
+                            <button onclick="playSongByTitle('나토리')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 내 손을 잡아 아이유</span>
+                            <button onclick="playSongByTitle('내 손을 잡아1')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 너는 록을 듣지 않아</span>
+                            <button onclick="playSongByTitle('너는 록을 듣지 않아')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 노려라 포켓몬 마스터 포켓몬스터</span>
+                            <button onclick="playSongByTitle('노려라 포켓몬 마스터 포켓몬스터')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 눈 코 입 태양</span>
+                            <button onclick="playSongByTitle('눈 코 입')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 디토</span>
+                            <button onclick="playSongByTitle('디토1')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 당신이 준 것시크릿 베이스 아노하나</span>
+                            <button onclick="playSongByTitle('당신이 준 것시크릿 베이스 아노하나')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 드라이플라워</span>
+                            <button onclick="playSongByTitle('드라이플라워')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 마리아 미녀는 괴로워</span>
+                            <button onclick="playSongByTitle('마리아 미녀는 괴로워')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 믹스너츠 스파이패밀리</span>
+                            <button onclick="playSongByTitle('믹스너츠 스파이패밀리')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 바람이 되어 고양이의 보은</span>
+                            <button onclick="playSongByTitle('바람이 되어 고양이의 보은')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 방가방가 햄토리</span>
+                            <button onclick="playSongByTitle('방가방가 햄토리')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 방해쟁이</span>
+                            <button onclick="playSongByTitle('방해쟁이')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 불장난 블랙핑크</span>
+                            <button onclick="playSongByTitle('불장난')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 블랙핑크  마지막처럼</span>
+                            <button onclick="playSongByTitle('마지막처럼')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 사랑은 혼돈의 노예 기어와라 냐루코양</span>
+                            <button onclick="playSongByTitle('사랑은 혼돈의 노예 기어와라 냐루코양')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 사랑하는 포춘 쿠키</span>
+                            <button onclick="playSongByTitle('사랑하는 포춘 쿠키')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 슈가송과 비터스텝 혈계전선</span>
+                            <button onclick="playSongByTitle('슈가송과 비터스텝 혈계전선')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 슈퍼맨 노라조</span>
+                            <button onclick="playSongByTitle('슈퍼맨')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 신시대 원피스 극장판</span>
+                            <button onclick="playSongByTitle('신시대 원피스 극장판')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 신호등 이무진</span>
+                            <button onclick="playSongByTitle('신호등')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 실루엣 나루토 질풍전</span>
+                            <button onclick="playSongByTitle('실루엣 나루토 질풍전')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 러브포엠</span>
+                            <button onclick="playSongByTitle('러브포엠')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 아이유  에잇</span>
+                            <button onclick="playSongByTitle('에잇1')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 아타라요  10월 과묵한 너를 잊는다</span>
+                            <button onclick="playSongByTitle('10월 과묵한 너를 잊는다')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 안젤라 아키  편지 친애하는 15살의 당신에게</span>
+                            <button onclick="playSongByTitle('편지 친애하는 15살의 당신에게')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 오도</span>
+                            <button onclick="playSongByTitle('오도')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 오피셜히게단디즘</span>
+                            <button onclick="playSongByTitle('오피셜히게단디즘')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 유니 스텔라 스텔라</span>
+                            <button onclick="playSongByTitle('스텔라 스텔라1')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 이토실 실 인연의 시작</span>
+                            <button onclick="playSongByTitle('인연의 시작')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 좋아하는 사람이 있다는 것 강지영</span>
+                            <button onclick="playSongByTitle('좋아하는 사람이 있다는 것')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 좋은 날 아이유</span>
+                            <button onclick="playSongByTitle('좋은 날')">플레이</button>
+                          </li>
+                          <li>
+                            <span>AyatsunoYuni - 체인소맨</span>
+                            <button onclick="playSongByTitle('체인소맨')">플레이</button>
+                        </li>
+                        <li>
+                            <span>AyatsunoYuni - 카타오모이짝사랑 에메</span>
+                            <button onclick="playSongByTitle('카타오모이짝사랑 에메')">플레이</button>
+                        </li>
+                        <li>
+                            <span>AyatsunoYuni - 케야키자카</span>
+                            <button onclick="playSongByTitle('케야키자카')">플레이</button>
+                        </li>
+                        <li>
+                            <span>AyatsunoYuni - 키라키라반짝반짝 모사오</span>
+                            <button onclick="playSongByTitle('키라키라반짝반짝 모사오')">플레이</button>
+                        </li>
+                        <li>
+                            <span>AyatsunoYuni - 키세키기적 그린</span>
+                            <button onclick="playSongByTitle('키세키기적 그린')">플레이</button>
+                        </li>
+                        <li>
+                            <span>AyatsunoYuni - 토리세츠취급 설명서 히로인 실격</span>
+                            <button onclick="playSongByTitle('토리세츠취급 설명서 히로인 실격')">플레이</button>
+                        </li>
+                        <li>
+                            <span>AyatsunoYuni - 하늘바라기</span>
+                            <button onclick="playSongByTitle('하늘바라기')">플레이</button>
+                        </li>
+                        <li>
+                            <span>AyatsunoYuni - 헤비 로테이션</span>
+                            <button onclick="playSongByTitle('헤비 로테이션')">플레이</button>
+                        </li>
+                        <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+                        <li>
+                          <span>AyatsunoYuni - 365일의 종이비행기</span>
+                          <button onclick="playSongByTitle('365일의 종이비행기')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 세계는 사랑에 빠져있어</span>
+                          <button onclick="playSongByTitle('세계는 사랑에 빠져있어1')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 네코</span>
+                          <button onclick="playSongByTitle('네코')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 네가 준 여름</span>
+                          <button onclick="playSongByTitle('네가 준 여름')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 나츠마츠리여름축제</span>
+                          <button onclick="playSongByTitle('나츠마츠리여름축제')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 상냥함으로 흘러넘치도록</span>
+                          <button onclick="playSongByTitle('상냥함으로 흘러넘치도록')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 불꽃호무라 귀멸의 칼날 무한열차편 OST</span>
+                          <button onclick="playSongByTitle('불꽃호무라 귀멸의 칼날 무한열차편 OST')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 도쿄 섄디 랑데부</span>
+                          <button onclick="playSongByTitle('도쿄 섄디 랑데부')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 작은 사랑의 노래</span>
+                          <button onclick="playSongByTitle('작은 사랑의 노래')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 아무것도 아니야</span>
+                          <button onclick="playSongByTitle('아무것도 아니야')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 세상에 하나뿐인 꽃</span>
+                          <button onclick="playSongByTitle('세상에 하나뿐인 꽃')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 네가 모르는 이야기</span>
+                          <button onclick="playSongByTitle('네가 모르는 이야기')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 외톨이 THE ROCK</span>
+                          <button onclick="playSongByTitle('외톨이 THE ROCK')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 꿈을 이루어줘 도라에몽</span>
+                          <button onclick="playSongByTitle('꿈을 이루어줘 도라에몽')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 팬서비스</span>
+                          <button onclick="playSongByTitle('팬서비스1')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 귀여워서 미안해</span>
+                          <button onclick="playSongByTitle('귀여워서 미안해')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 만약 운명의 사람이 있다면</span>
+                          <button onclick="playSongByTitle('만약 운명의 사람이 있다면')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 키밋테</span>
+                          <button onclick="playSongByTitle('키밋테')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 날아라 호빵맨 주제가</span>
+                          <button onclick="playSongByTitle('날아라 호빵맨 주제가')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 디지몬어드벤처 op</span>
+                          <button onclick="playSongByTitle('디지몬어드벤처 op')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 블레싱</span>
+                          <button onclick="playSongByTitle('블레싱')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 수련꽃수이렌카</span>
+                          <button onclick="playSongByTitle('수련꽃수이렌카')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 마루마루 모리모리 마루모의 규칙의 ed</span>
+                          <button onclick="playSongByTitle('마루마루 모리모리 마루모의 규칙의 ed')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 마리골드</span>
+                          <button onclick="playSongByTitle('마리골드')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 봄날</span>
+                          <button onclick="playSongByTitle('봄날')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - Rain Drop</span>
+                          <button onclick="playSongByTitle('Rain Drop')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 꿈을 꾸는 동안</span>
+                          <button onclick="playSongByTitle('꿈을 꾸는 동안')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 오토나부루어른인척</span>
+                          <button onclick="playSongByTitle('오토나부루어른인척')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 향수</span>
+                          <button onclick="playSongByTitle('향수')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 사쿠란보</span>
+                          <button onclick="playSongByTitle('사쿠란보')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 변하지 않는 것</span>
+                          <button onclick="playSongByTitle('변하지 않는 것')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 요괴체조1번 요괴워치ed</span>
+                          <button onclick="playSongByTitle('요괴체조1번 요괴워치ed')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 꽃에망령</span>
+                          <button onclick="playSongByTitle('꽃에망령')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 아이돌</span>
+                          <button onclick="playSongByTitle('아이돌1')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 몇 번째의 푸른 하늘인가</span>
+                          <button onclick="playSongByTitle('몇 번째의 푸른 하늘인가')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 베텔기우스2</span>
+                          <button onclick="playSongByTitle('베텔기우스2')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 비밀번호 486</span>
+                          <button onclick="playSongByTitle('비밀번호 486')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 마쿠로는 아홉살 ost</span>
+                          <button onclick="playSongByTitle('마쿠로는 아홉살 ost')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 여자 아이는 울지 않아</span>
+                          <button onclick="playSongByTitle('여자 아이는 울지 않아')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 불협화음</span>
+                          <button onclick="playSongByTitle('불협화음')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 1111</span>
+                          <button onclick="playSongByTitle('1111')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 연애 서큘레이션</span>
+                          <button onclick="playSongByTitle('연애 서큘레이션')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 꼭두각시 피에로</span>
+                          <button onclick="playSongByTitle('꼭두각시 피에로')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 천본앵</span>
+                          <button onclick="playSongByTitle('천본앵')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 카밋포이나신 같네</span>
+                          <button onclick="playSongByTitle('카밋포이나신 같네')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 코이사랑</span>
+                          <button onclick="playSongByTitle('코이사랑')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 봄의노래</span>
+                          <button onclick="playSongByTitle('봄의노래')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 하나미즈키</span>
+                          <button onclick="playSongByTitle('하나미즈키')">플레이</button>
+                      </li>
+                      <li>
+                          <span>AyatsunoYuni - 강풍올백</span>
+                          <button onclick="playSongByTitle('강풍올백1')">플레이</button>
+                      </li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+            <h1>　　　　</h1>
+            <div id="search-container">
+              <input type="text" id="search-input" placeholder="음악을 검색하세요">
+              <button id="search-button" onclick="searchMusic()">검색</button>
+              <button id="reset-button" onclick="resetSearch()">초기화</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="popup-box">
+      <div id="popup-content">
+          <h2>스텔뮤직 음량관련 이슈 안내</h2>
+          <p>해당 채널에선 음원 파일들의 사운드 음량이 일정하지 않아 꼭 소리를 작게 틀고 난 후 음량을 조절하여 들으시는걸 추천드립니다.<br><br>
+          현재 자동으로 음량을 조절할 수 있는 방안을 찾고있으며<br><br>
+          최대한 빠른시일내 패치할 수 있도록 하겠습니다.<br><br>
+          감사합니다.</p>
+          <label><input type="checkbox" id="dont-show-checkbox">하루동안 열지 않기</label>
+          <button id="close-button">닫기</button>
+      </div>
+  </div>
+
+    <div id="now-playing">
+        <div id="now-playing-info">
+            <img id="now-playing-image" src="" alt="현재 재생 중인 곡 이미지">
+            <div id="now-playing-details">
+                <h2 id="now-playing-title">곡 제목</h2>
+                <p id="now-playing-artist">아티스트</p>
+                <div id="now-playing-progress">
+                    <div id="progress-bar"></div>
+                    <div id="progress-handle"></div>
+                </div>
+                <button id="scrollToTopBtn" onclick="scrollToTop()">TOP</button>
+                <p id="now-playing-time">00:00 / 00:00</p>
+            </div>
+            <button id="shuffle" onclick="shuffle()">전체셔플</button>
+        </div>
+        <div id="player-controls">
+            <button id="prev-button" onclick="playPrevious()">이전</button>
+            <button id="rewind-button">< 5</button>
+            <button id="play-button" onclick="playPause()">〓</button>
+            <button id="forward-button">5 ></button>
+            <button id="next-button" onclick="playNext()">다음</button>
+            <p id="repeat-message"></p><br>
+            <button id="repeat-button">반복 재생</button>
+            <input type="range" id="volume-slider" min="0" max="100" value="100">
+        </div>
+    </div>
+
+
+    <script>
+        var activeProfile = null;
+
+        function toggleProfile(profileId) {
+            var profile = document.getElementById(profileId + "-profile");
+            if (profile.style.display === "none") {
+                hideActiveProfile();
+                profile.style.display = "block";
+                activeProfile = profile;
+            } else {
+                profile.style.display = "none";
+                activeProfile = null;
+            }
+        }
+
+        function hideActiveProfile() {
+            if (activeProfile) {
+                activeProfile.style.display = "none";
+            }
+        }
+    </script>
+    
+    <audio id="audio-player"></audio>
+    <script src="../a.js"></script>
+<link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+<script src="아티스트.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+/* 메인 화면 색상 */
+/* body {
+    background: linear-gradient(135deg, #1c1c6d, #6e2074);
+  } */
+
+
+/* 네비게이션 바 스타일 */
+#header-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    transition: padding 0.3s ease;
+    z-index: 100;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    transition: width 0.3s ease;
+}
+
+.logo img {
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: rotate(360deg);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+/* 네비게이션 바 스타일 */
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #eee;
+    color: #000000;
+}
+
+.nav-item:hover .ellipse_1 svg circle {
+    fill: #333;
+}
+
+.bar-right {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#right-divider {
+    width: 1px;
+    height: 20px;
+    background-color: #81a7ff;
+    margin: 0 10px;
+}
+
+#divider2 {
+    width: 1890px;
+    height: 2px;
+    background-color: #81a7ff;
+}
+
+.ellipse_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+
+.ellipse_1 svg circle {
+    fill: #81a7ff;
+    transition: fill 0.3s ease;
+}
+
+/* 모바일 네비게이션 바 스타일 */
+#burger-btn {
+    display: none;
+}
+
+#nav-bar-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        margin-top: 20px;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .bar-right {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #burger-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    #burger-btn div {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin-bottom: 5px;
+    }
+
+    #nav-bar-mobile.nav-bar-enabled {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .nav-item-wrap {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+  
+    .login-div {
+      width: 100%;
+      border: none;
+      border-top: 1px solid #333;
+      margin-bottom: 10px;
+    }
+}
+
+/* 푸터 스타일 */
+#footer-wrap {
+    font-family: 'PyeongChangPeace-Bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background: linear-gradient(45deg, #7392ef, #E1BEE7);
+    color: white;
+    background-image: linear-gradient(45deg, transparent 50%, #7290ec 50%),
+      linear-gradient(45deg, #7392ef 50%, transparent 50%),
+      linear-gradient(45deg, transparent 50%, #7392ef 50%),
+      linear-gradient(45deg, #7392ef 50%, transparent 50%);
+    background-size: 40px 40px;
+}
+
+
+.footer-content {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .subtitle {
+    margin-top: -50px;
+  }
+
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 40px); /* 네비게이션 바의 높이를 고려하여 조정 */
+    height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #7392ef, #E1BEE7);
+    color: white;
+    background-image: linear-gradient(45deg, transparent 50%, #7290ec 50%),
+      linear-gradient(45deg, #7392ef 50%, transparent 50%),
+      linear-gradient(45deg, transparent 50%, #7392ef 50%),
+      linear-gradient(45deg, #7392ef 50%, transparent 50%);
+    background-size: 40px 40px;
+  }
+
+
+  h1 {
+    font-family: 'PyeongChangPeace-Bold';
+    background: linear-gradient(135deg, rgb(103, 128, 216), rgb(49, 0, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorAnimation 3s infinite alternate;
+    /* white-space: nowrap; */
+    font-size: 70px;
+  }
+  
+  h2 {
+    font-family: 'PyeongChangPeace-Bold';
+    white-space: nowrap;
+    font-size: 20px;
+  }
+
+.custom-notice {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #555555;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.custom-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.custom-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.custom-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.custom-name,
+.custom-date {
+    margin: 0;
+    color: white;
+}
+
+.custom-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* 박스 스타일 */
+.박스 {
+    width: 450px;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .박스:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  /* 말머리 스타일 */
+  .말머리 {
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* 썸네일 스타일 */
+  .썸네일 {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .박스:hover .썸네일 {
+    transform: scale(1.1);
+  }
+
+  /* 제목 스타일 */
+  .제목 {
+    font-size: 16px;
+    color: #000;
+  }
+
+
+  .nav-item-container {
+    position: relative;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .nav-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .nav-item .ellipse_1 {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+  
+  .nav-item .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* 원하는 가로 크기로 설정 */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0; /* 초기에는 투명하게 설정 */
+    transition: opacity 0.3s ease; /* 투명도에 대한 transition 효과 추가 */
+  }
+  
+  .nav-item:hover .sub-menu {
+    display: block;
+    opacity: 1; /* 호버 시 투명도를 1로 설정하여 서서히 나오도록 함 */
+  }
+  
+  .nav-item .sub-menu a {
+    display: block;
+    padding: 5px 0;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav-item .sub-menu a:hover {
+    color: #00aeef;
+  }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ayatsuno Yuni Single Lyrics</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="author" content="AyatsunoYuni" />
+    <meta property="og:url" content="https://stelmusic.xyz/yuni/index.html" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="아야츠노 유니의 신곡을 가사로 만나보세요!"
+    />
+    <meta
+      property="og:title"
+      content="스텔뮤직ㅣ가사"
+    />
+    <meta
+      property="og:description"
+      content="아야츠노 유니의 신곡을 가사로 만나보세요!"
+    />
+    <meta property="og:image" content="image.jpg" />
+    <meta
+      name="description"
+      content="아야츠노 유니의 신곡을 가사로 만나보세요!"
+    />
+    <link rel="shortcut icon" href="favicon.jpg" />
+  </head>
+
+  <body>
+    <div id="header-wrap">
+      <div id="header">
+        <a class="logo" href="/">
+          <img src="https://cdn.discordapp.com/attachments/1111177143666352162/1131830020873125898/stelmusic-yuni.png" style="width:50px; height:50px;"/></a>
+        <div class="nav-bar">
+          <a class="nav-item" id="공지사항" href="/src/공지사항/공지사항.html">
+            <div class="ellipse_1">
+              <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+              </svg>
+            </div>공지사항
+          </a>
+          <a class="nav-item" id="뉴스" href="/src/뉴스/뉴스.html">
+            <div class="ellipse_1">
+              <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+              </svg>
+            </div>뉴스
+          </a>
+          <div class="nav-item-container">
+            <div class="nav-item" id="아티스트">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>
+              아티스트
+              <div class="sub-menu">
+                <a href="/src/아티스트/아티스트.html">전체보기</a>
+                <a></a>
+                <a href="/src/아티스트/artist1.html">강지</a>
+                <a></a>
+                <a href="/src/아티스트/artist2.html">칸나</a>
+                <a></a>
+                <a href="/src/아티스트/artist3.html">유니</a>
+              </div>
+            </div>
+          </div>
+          <a class="nav-item" id="프로젝트" href="/src/프로젝트/프로젝트.html">
+            <div class="ellipse_1">
+              <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+              </svg>
+            </div>프로젝트
+          </a>
+          <a class="nav-item" id="팀" href="/src/팀/팀.html">
+            <div class="ellipse_1">
+              <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+              </svg>
+            </div>팀
+          </a>
+          <div id="right-divider"></div>
+          <div class="bar-right">
+            <a class="nav-item" id="지원" href="/src/지원/지원.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>지원
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="burger-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    
+    <div id="overlay"></div>
+
+    <div class="content">
+      <div class="lyrics"></div>
+    </div>
+
+    <div class="player">
+      <div class="left"></div>
+      <div class="right">
+        <div class="top">
+          <p class="songs">
+            아야츠노 유니 (Ayatsuno Yuni)
+            <br>내꺼 하는 법
+            <br>SUPPORT STELMUSIC & wefersonstudio
+          </p>
+        </div>
+        <div class="bottom">
+          <video
+            controlslist="nodownload"
+            controls=""
+            _autoplay=""
+            name="media"
+            oncontextmenu="return false;"
+          >
+            <source src="yuni.mp3" type="audio/mpeg" />
+          </video>
+        </div>
+        <div class="button-container">
+          <button class="custom-button" onclick="location.href='./yuni-inst/index.html'">노래방버전</button>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

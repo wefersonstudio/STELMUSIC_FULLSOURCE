@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="스텔뮤직 Web">
+    <meta property="og:description" content="스텔뮤직 페이지">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1064184323617599488/1109309124044398632/stelmusic_banner.png"/>
+    <meta name="theme-color" content="#1DDB16">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>2기생</title>
+    <link rel="stylesheet" href="아티스트2.css">
+</head>
+<body>
+    <div id="header-wrap">
+        <div id="header">
+          <a class="logo" href="/">
+            <img src="https://cdn.discordapp.com/attachments/1111177143666352162/1131830020873125898/stelmusic-yuni.png" style="width:50px; height:50px;"/></a>
+          <div class="nav-bar">
+            <a class="nav-item" id="공지사항" href="/src/공지사항/공지사항.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>공지사항
+            </a>
+            <a class="nav-item" id="뉴스" href="/src/뉴스/뉴스.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>뉴스
+            </a>
+            <div class="nav-item-container">
+              <div class="nav-item" id="아티스트">
+                <div class="ellipse_1">
+                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                  </svg>
+                </div>
+                아티스트
+                <div class="sub-menu">
+                  <a href="/src/아티스트/아티스트.html">전체보기</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist1.html">강지</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist2.html">칸나</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist3.html">유니</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist4.html">타비</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist5.html">리제</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist6.html">히나</a>
+                  <a></a>
+                  <a href="/src/아티스트/artist7.html">마시로</a>
+                  <a></a>
+                  <a href="/src/아티스트/stellive1st.html">스텔라이브 1기생 단체</a>
+                  <a></a>
+                  <a href="/src/아티스트/stellive2nd.html">스텔라이브 2기생 단체</a>
+                </div>
+              </div>
+            </div>
+            <a class="nav-item" id="프로젝트" href="/src/프로젝트/프로젝트.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>프로젝트
+            </a>
+            <a class="nav-item" id="팀" href="/src/팀/팀.html">
+              <div class="ellipse_1">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                </svg>
+              </div>팀
+            </a>
+            <div id="right-divider"></div>
+            <div class="bar-right">
+              <a class="nav-item" id="지원" href="/src/지원/지원.html">
+                <div class="ellipse_1">
+                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3" cy="3" r="3" fill="#F4FF81"></circle>
+                  </svg>
+                </div>지원
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="burger-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <div class="artist-icons">
+                <!-- 칸나 아이콘 -->
+                <div class="artist-profile" id="artist1-profile" style="display: block;">
+                  <h2>스텔라이브 1기 Mystic</h2>
+                  <div class="profile-details">
+                      <img src="data:image/jpeg;base64,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" alt="스텔라이브 프로필 이미지">
+                      <p>스텔라이브 1기 Mystic</p>
+                  </div><br>
+                  <h3>스텔라이브 1기 Mystic 곡 목록</h3>
+                  <ul>
+                    <li>
+                      <span>1기생 단체(Mystic) - Ahoy 우리는 호쇼해적단</span>
+                      <button onclick="playSongByTitle('Ahoy 우리는 호쇼해적단1')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 괴수의 꽃노래</span>
+                      <button onclick="playSongByTitle('괴수의 꽃노래3')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 디토</span>
+                      <button onclick="playSongByTitle('디토1')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 베텔기우스</span>
+                      <button onclick="playSongByTitle('베텔기우스3')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 사쿠란보</span>
+                      <button onclick="playSongByTitle('사쿠란보1')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 스노우 하레이션</span>
+                      <button onclick="playSongByTitle('스노우 하레이션')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 좋아하니까.</span>
+                      <button onclick="playSongByTitle('좋아하니까.')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 신시대</span>
+                      <button onclick="playSongByTitle('신시대1')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 아이돌</span>
+                      <button onclick="playSongByTitle('아이돌3')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 에잇</span>
+                      <button onclick="playSongByTitle('에잇2')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 카타오모이</span>
+                      <button onclick="playSongByTitle('카타오모이')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 텔미</span>
+                      <button onclick="playSongByTitle('텔미')">플레이</button>
+                    </li>
+                    <li>
+                      <span>1기생 단체(Mystic) - 팬서비스</span>
+                      <button onclick="playSongByTitle('팬서비스2')">플레이</button>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+          <h1>　</h1>
+          <div id="search-container">
+            <input type="text" id="search-input" placeholder="음악을 검색하세요">
+            <button id="search-button" onclick="searchMusic()">검색</button>
+            <button id="reset-button" onclick="resetSearch()">초기화</button>
+          </div>
+    </div>
+    
+    <div id="popup-box">
+      <div id="popup-content">
+          <h2>스텔뮤직 음량관련 이슈 안내</h2>
+          <p>해당 채널에선 음원 파일들의 사운드 음량이 일정하지 않아 꼭 소리를 작게 틀고 난 후 음량을 조절하여 들으시는걸 추천드립니다.<br><br>
+          현재 자동으로 음량을 조절할 수 있는 방안을 찾고있으며<br><br>
+          최대한 빠른시일내 패치할 수 있도록 하겠습니다.<br><br>
+          감사합니다.</p>
+          <label><input type="checkbox" id="dont-show-checkbox">하루동안 열지 않기</label>
+          <button id="close-button">닫기</button>
+      </div>
+  </div>
+
+    <div id="now-playing">
+        <div id="now-playing-info">
+            <img id="now-playing-image" src="" alt="현재 재생 중인 곡 이미지">
+            <div id="now-playing-details">
+                <h2 id="now-playing-title">곡 제목</h2>
+                <p id="now-playing-artist">아티스트</p>
+                <div id="now-playing-progress">
+                    <div id="progress-bar"></div>
+                    <div id="progress-handle"></div>
+                </div>
+                <button id="scrollToTopBtn" onclick="scrollToTop()">TOP</button>
+                <p id="now-playing-time">00:00 / 00:00</p>
+            </div>
+            <button id="shuffle" onclick="shuffle()">전체셔플</button>
+        </div>
+        <div id="player-controls">
+            <button id="prev-button" onclick="playPrevious()">이전</button>
+            <button id="rewind-button">< 5</button>
+            <button id="play-button" onclick="playPause()">〓</button>
+            <button id="forward-button">5 ></button>
+            <button id="next-button" onclick="playNext()">다음</button>
+            <p id="repeat-message"></p><br>
+            <button id="repeat-button">반복 재생</button>
+            <input type="range" id="volume-slider" min="0" max="100" value="100">
+        </div>
+    </div>
+
+
+    <script>
+        var activeProfile = null;
+
+        function toggleProfile(profileId) {
+            var profile = document.getElementById(profileId + "-profile");
+            if (profile.style.display === "none") {
+                hideActiveProfile();
+                profile.style.display = "block";
+                activeProfile = profile;
+            } else {
+                profile.style.display = "none";
+                activeProfile = null;
+            }
+        }
+
+        function hideActiveProfile() {
+            if (activeProfile) {
+                activeProfile.style.display = "none";
+            }
+        }
+    </script>
+    
+    <audio id="audio-player"></audio>
+    <script src="../a.js"></script>
+<link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+<script src="아티스트.js"></script>
+</body>
+</html>
